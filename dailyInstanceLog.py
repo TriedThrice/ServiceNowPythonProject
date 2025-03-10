@@ -33,9 +33,6 @@ if response.status_code == 200:
         addUser = [nameID, email, realname, sysID]
         
         checkUserList.append(addUser)
-        #print("Admin User:", nameID + ", " + email + ", " + sysID)
-        #print("-" * 10)
-    #print("Admin Users:", json.dumps(users, indent=4))
 else:
     print("Error:", response.status_code, response.text)
     
